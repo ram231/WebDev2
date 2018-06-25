@@ -7,6 +7,12 @@ hours = hours % 12;
 document.getElementById("today").innerHTML = "Today is: " + DaysOfWeek[date.getDay()];
 document.getElementById("time").innerHTML = "Current Time:" +  date.toLocaleTimeString();
 
+if(date.getHours() ==10 || date.getHours() ==11 || date.getHours() == 12 || date.getHours >=22){
+    document.getElementById("time").innerHTML = "Current Time: " +  date.toLocaleTimeString();
+}
+else if(date.getHours() <10 || date.getHours() >=13 && date.getHours() <= 22){
+    document.getElementById("time").innerHTML = "Current Time: 0" +  date.toLocaleTimeString();
+}
 
 function Sum() {  
     var val1 = parseInt(document.getElementById("val1").value);
