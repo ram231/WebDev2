@@ -9,7 +9,7 @@
   - Remaining Days before New Year's Eve
  
 ### Problem 4: 
-  - Convert Celcius to Farenheit //Not Finished
+  - Convert Celcius to Farenheit
 
 ### Problem 5:
   - Compare two Values
