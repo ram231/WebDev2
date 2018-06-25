@@ -5,7 +5,7 @@ var hours = date.getHours();
 var ampm = hours >= 12 ? 'pm': 'am';
 hours = hours % 12;
 document.getElementById("today").innerHTML = "Today is: " + DaysOfWeek[date.getDay()];
-document.getElementById("time").innerHTML = "Current Time:" +   hours + ":" + date.getMinutes + ":" + date.getSeconds + " " + ampm;
+document.getElementById("time").innerHTML = "Current Time:" +  date.toLocaleTimeString();
 
 
 function Sum() {  
