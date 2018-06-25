@@ -53,3 +53,8 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 document.getElementById("RemDays").innerHTML = days + "days " + hours + "hrs. "
 + minutes + "minutes " + seconds + " seconds before New Year's Eve";
 
+function CeltoFar(){
+    var value = document.getElementById('value').value;
+    document.getElementById('convert').innerHTML = "Farenheit value: " + (value *(9/5) + 32);
+
+}
